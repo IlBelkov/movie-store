@@ -1,0 +1,67 @@
+.main
+  position relative
+  height 497px
+
+  &__bg-wrap
+    position relative
+  
+  &__btn-wrap
+    position absolute
+    bottom 160px
+    right 175px
+  
+  &__btn
+    width 118px
+    height 38px
+    border-radius 5px
+    background-color redColor
+    border none 
+    color whiteColor
+    font-family AdobeGothicStd-Bold 
+    font-size 14px
+    font-weight 700
+    text-transform uppercase
+
+    &:active, 
+    &:focus 
+      outline none
+
+    &:hover
+      cursor pointer
+      box-shadow inset 0px -3px 10px rgba(0, 0, 0, 0.5)
+
+.main-footer
+  position absolute
+  min-height 50px
+  display flex
+  align-items center
+  background alpha(#070707,0.35)
+  max-width 100%
+  bottom 0px
+
+  &__item-wrap
+    display flex
+    align-items flex-end
+    &:not(:last-child)
+      margin-right 30px
+    &:last-child
+      align-items center
+
+  &__title, &__date
+    text-transform uppercase
+
+  &__date
+    color redColor
+    font-family Calibri
+    font-size 14px
+    font-weight 400
+  &__title
+    color whiteColor
+    font-family AdobeGothicStd-Bold
+    font-size 16px
+    font-weight 700
+    margin-right 10px
+    line-height 25px
+
+.rating
+  display flex

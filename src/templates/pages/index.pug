@@ -2,4 +2,24 @@ extends ../layouts/main
 
 block content
   +b.main
-    
+    .container
+      +e.bg-wrap.banner__
+        +e.IMG(src='assets/images/banner.png').img
+      +e.btn-wrap
+        +e.BUTTON.btn Watch now
+      +e.footer.main-footer__
+        +e.item-wrap
+          +e.title Published 
+          +e.date Feb 20, 2014
+        +e.item-wrap
+          +e.title Updated 
+          +e.date Feb 20, 2014 
+        +e.item-wrap
+          +e.title Rating
+          +e.rating.rating__ 
+            +e.IMG(src='assets/images/star_empty.png').star-empty
+            +e.IMG(src='assets/images/star_empty.png').star-empty
+            +e.IMG(src='assets/images/star_empty.png').star-empty
+            +e.IMG(src='assets/images/star_empty.png').star-empty
+            +e.IMG(src='assets/images/star_empty.png').star-empty
+        
