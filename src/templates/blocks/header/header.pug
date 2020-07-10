@@ -1,3 +1,39 @@
 mixin header()
   +b.HEADER.header
     .container
+      +e.logo-wrap
+        +b.A(href='#').logo
+          +e.IMG(src='assets/images/logo.png').image
+      
+      +e.nav-wrap
+        +b.NAV.nav
+          +e.A(href='#').link
+            +e.IMG(src='../../../assets/images/messages.png').img
+            +e.hint-wrap
+              +e.hint messages
+          +e.A(href='#').link
+            +e.IMG(src='../../../assets/images/video.png').img
+            +e.hint-wrap
+              +e.hint video
+          +e.A(href='#').link
+            +e.IMG(src='../../../assets/images/play.png').img
+            +e.hint-wrap
+              +e.hint play
+          +e.A(href='#').link
+            +e.IMG(src='../../../assets/images/game.png').img
+            +e.hint-wrap
+              +e.hint game
+          +e.A(href='#').link
+            +e.IMG(src='../../../assets/images/tv.png').img
+            +e.hint-wrap
+              +e.hint tv
+          +e.A(href='#').link
+            +e.IMG(src='../../../assets/images/export.png').img
+            +e.hint-wrap
+              +e.hint save
+      
+      +e.profile-wrap
+        +b.profile
+          +e.photo-wrap
+            +e.IMG(src='../../../assets/images/profile.png').photo
+          +e.name Carol Danvers

@@ -1,0 +1,106 @@
+.header
+  padding-top 21px
+  padding-bottom 25px
+  .container
+    display flex
+    justify-content space-between
+    align-items center
+  
+  &__nav-wrap
+    width 349px
+
+.nav
+  display flex
+  justify-content space-between
+
+  &__link
+    position relative
+
+    &:hover
+      .nav__hint-wrap
+        display block
+
+  &__hint
+    text-transform uppercase
+    color whiteColor
+    font-size 13px
+    font-weight 700 
+  
+    &-wrap
+      padding 11px 9px 6px 9px
+      background redColor
+      border-radius 8px
+      position absolute
+      top 38px
+      left 50%
+      transform translate(-50%)
+      display none
+
+    &:before
+      border 8px solid transparent
+      border-bottom 8px solid redColor
+      position absolute
+      content ''
+      top -16px
+      left 50%
+      transform translateX(-50%)
+
+    
+
+
+.profile
+  display flex
+  align-items center
+  position relative
+  margin-right 29px
+
+  &__photo-wrap
+    margin-right 11px
+    position relative
+
+    &:after
+      position absolute
+      content ''
+      width 6px
+      height 6px
+      border 2px solid whiteColor
+      background-color redColor
+      top 0
+      right 0
+      border-radius 50%
+
+  &__photo
+    &:hover
+      transform scale(1.5)
+      cursor pointer
+  
+  &__name
+    font-family AdobeGothicStd-Bold
+    color darkColor
+    font-size 15px
+    font-weight 700
+    position relative
+
+    &:after
+      position absolute
+      content ''
+      width 12px
+      height 17px
+      top 50%
+      right -29px
+      transform translateY(-50%)
+      background url('../images/pensil.png') center no-repeat
+
+    &:hover
+      cursor pointer
+      text-decoration underline
+
++below(sm-breakpoint)
+  .header
+    .container
+      flex-wrap wrap
+  
+    &__nav-wrap
+      order 2
+      flex-basis 100%
+      margin-top 20px
