@@ -1,0 +1,26 @@
+include ../bemto/bemto.pug
+include ../mixins/mixins
+include ../blocks/header/header
+include ../blocks/footer/footer
+include ../blocks/scripts/scripts
+
+-
+  set_bemto_settings({
+    prefix: '',
+    element: '__',
+    modifier: '--'
+  })
+
+
+doctype html
+html(lang='en')
+  include ../blocks/head/head
+  body
+    .svg-sprite
+      include ../blocks/sprite/svg.svg
+    .main-content
+      +header()
+      block content
+      +footer()
+    block scripts
+    +scripts(['build.js'])
